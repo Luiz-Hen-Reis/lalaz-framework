@@ -64,7 +64,7 @@ class Router
         $controllerClassName = $this->controllerLookup($controllerName);
 
         if (!$controllerClassName) {
-            die("Controller ${controllerName} was not found!");
+            die("Controller {$controllerName} was not found!");
         }
 
         return $this->map($method, $path, $controllerClassName, $function, $middlewares);
