@@ -158,7 +158,7 @@ class Response
     public function redirect(string $url): void
     {
         $host = $_SERVER['HTTP_HOST'];
-        header("Location: ${url}");
+        header("Location: {$url}");
         exit();
     }
 
