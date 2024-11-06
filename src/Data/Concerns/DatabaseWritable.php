@@ -229,7 +229,7 @@ trait DatabaseWritable
      *
      * @return bool
      */
-    public function refreshTimestamp(): bool
+    public function touch(): bool
     {
         $this->updateTimestamps();
         return $this->performUpdate();
